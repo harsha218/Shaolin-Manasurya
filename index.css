@@ -42,6 +42,31 @@ section {
     overflow-x: hidden;
 }
 
+.desc {
+    margin-bottom: 1.4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+.rotate {
+    animation: rotation 40s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* Intro Section */
 #intro {
     background-color: #e8d7a3;
     color: black;
@@ -54,21 +79,15 @@ section {
     font-family: 'Sonsie One', cursive;
 }
 
+
+/* Mission Section */
 #mission {
     background-color: white;
     color: black;
 }
 
-.desc {
-    margin-bottom: 1.4rem;
-}
 
-.title {
-    font-size: 2.5rem;
-    font-family: 'Signika', sans-serif;
-    margin-bottom: 0.8rem;
-}
-
+/* Teach Section */
 #teach {
     background-color: #2f3336;
     color: #c8cbcb;
@@ -91,11 +110,15 @@ section {
     margin-left: -1em;
 }
 
+
+/* Contact section */
 #contact {
     background-color: #cecece;
     color: #554e56;
 }
 
+
+/* Carousel css */
 .carousel-control-next, .carousel-control-prev {
     filter: invert(100%);
 }
@@ -117,6 +140,7 @@ section {
 }
 
 
+/* Media Queries */
 @media (max-width: 800px) {
     #intro {
         flex-direction: column;
